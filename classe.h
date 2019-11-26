@@ -10,10 +10,10 @@ class linhas{
 	public:
 		linhas(int id, int *escolhas, std::string texto);
 		void error_msg(char *text);
-		int inicializar(char *my_audio);
+		void inicializar(char *my_audio);
 		void play_audio();
 		ALLEGRO_AUDIO_STREAM *som = NULL;
-		int escolhas[4];
+		int escolhas[3];
 		std::string texto;
 		int id;
 		
